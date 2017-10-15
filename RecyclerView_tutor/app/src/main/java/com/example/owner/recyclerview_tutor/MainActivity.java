@@ -3,8 +3,11 @@ package com.example.owner.recyclerview_tutor;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.text.Layout;
 import android.view.View;
 import android.widget.Toast;
@@ -46,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
 //mainBinding.recyclerView.setLayoutManager(new GridLayoutManager(this,4));
 // 가로 또는 세로 스크롤 목록 형식
         mainBinding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getApplicationContext(), new LinearLayoutManager(this).getOrientation());
+        mainBinding.recyclerView.addItemDecoration(dividerItemDecoration);
+        //mainBinding.recyclerView.addItemDecoration(new VerticalSpaceItemDecoration(48));
 
         mainBinding.recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(getApplicationContext(), mainBinding.recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
