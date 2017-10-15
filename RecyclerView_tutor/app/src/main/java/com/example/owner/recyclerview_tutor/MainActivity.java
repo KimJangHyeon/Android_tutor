@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
+import android.view.View;
+import android.widget.Toast;
 
 import com.example.owner.recyclerview_tutor.databinding.ActivityMainBinding;
 
@@ -45,6 +47,20 @@ public class MainActivity extends AppCompatActivity {
 // 가로 또는 세로 스크롤 목록 형식
         mainBinding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        mainBinding.recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(getApplicationContext(), mainBinding.recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+                        Toast.makeText(getApplicationContext(), position+"번째", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+                        Toast.makeText(getApplicationContext(), position+"번째 long 클릭", Toast.LENGTH_SHORT).show();
+
+                    }
+                })
+        );
         setData();
     }
 
