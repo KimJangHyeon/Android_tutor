@@ -19,6 +19,12 @@ by. 키위남
 
 splash
 ------------
+github: https://github.com/dudmy/blog-sample
+
+http://dudmy.net/android/2017/04/09/improved-loading-screen/
+
+by. Dudmy
+
 
 
 login
