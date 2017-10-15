@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 // RecyclerView 에 들어갈 데이터를 추가합니다.
         for(String name : names){
             mItems.add(new RecyclerItem(name));
-            mItems.add(new RecyclerItem(name));
         }
 // 데이터 추가가 완료되었으면 notifyDataSetChanged() 메서드를 호출해 데이터 변경 체크를 실행합니다.
         adapter.notifyDataSetChanged();
