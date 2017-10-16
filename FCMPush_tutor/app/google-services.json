@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "695530818968",
+    "firebase_url": "https://push-tutor.firebaseio.com",
+    "project_id": "push-tutor",
+    "storage_bucket": "push-tutor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695530818968:android:f0c7ecdf4d115d88",
+        "android_client_info": {
+          "package_name": "com.example.owner.fcmpush_tutor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695530818968-i2ce778vmv9i8dib4m0hg2ckdp89r56f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA3vEsjiZOiYQx8XtcsXDt19ibvi0WDxI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
